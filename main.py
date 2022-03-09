@@ -96,3 +96,4 @@ for i in range(len(sheety_data['flightData'])):
     }
     response = requests.put(url=f"{SHEET_ENDPOINT}""/"f"{sheety_data['flightData'][i]['id']}", json=post_params)
     response.raise_for_status()
+    print(complex_url)
