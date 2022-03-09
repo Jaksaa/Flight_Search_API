@@ -1,7 +1,7 @@
 Check if you are happy with IATA_CODE value which refers to general city airport you wanted to fly from.
 You need to make an excel sheet on your google account with column names: City, IATA Code, Lowest Price(you cane type in each row imaginary cost for example 100000).
 Next is to specify cities, countries you wanted to be searched in future steps.
-You nee to make an account on Sheety API page in order to obtain API KEY (free account enables to make 200 requests per month, for each row in our excel sheet)
+You need to make an account on Sheety API page in order to obtain API KEY (free account enables to make 200 requests per month, for each row in our excel sheet)
 Then follow the instructions on the main page to fuse your google sheet with the Sheety API
 Similary make an account on Kiwi API page to obtain API KEY for searching IATA codes and future flights
 (I personaly needed to have individual API key for searching codes and searching flights.
