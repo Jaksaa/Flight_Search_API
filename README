@@ -1,0 +1,14 @@
+You need to make an excel sheet on your google account with column names: City, IATA Code, Lowest Price(you cane type in each row imaginary cost for example 100000).
+Next is to specify cities, countries you wanted to be searched in future steps.
+You nee to make an account on Sheety API page in order to obtain API KEY (free account enables to make 200 requests per month, for each row in our excel sheet)
+Then follow the instructions on the main page to fuse your google sheet with the Sheety API
+Similary make an account on Kiwi API page to obtain API KEY for searching IATA codes and future flights
+(I personaly needed to have individual API key for searching codes and searching flights.
+After succesful running the program will update rows in our sheet on google (in IATA codes column and Lowest Price column) 
+and then return date of flight,return flight and deep url which can be accessed for more informations about flight.
+The parameters of search can be changed in dict search_params (more specific input params are available on Kiwi Tequila API page)
+After runinng program again(after a day or two) it will compare values of Lowest Prices(fromm google sheet) with values from program.
+And if they changed again the user will be informed about new lower deal.
+
+I wanted to add a notification using Twilio on private phone number about output data mentioned above but I ran out of requests on my Sheety page, so the output is just printed 
+but it's not a big deal(Note that you also have to make account on Twilio API page to get notifications via SMS)
